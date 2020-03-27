@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int Mas[1000];
+    int n;
+    cout<<"Input n:";
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cout << "Mas[" << i << "]: ";
+        cin >> Mas[i];
+    }
+    int max = Mas[0];
+    for (int i = 0; i < n; i++) {
+        if (max < Mas[i]) { max = Mas[i]; }
+    }
+    cout << "Our result:";
+    for (int i = 0; i < n; i++) {
+        if ((Mas[i] % 3 == 0) & (Mas[i] < max)) {
+            cout << Mas[i]<<" ";
+        }
+    }
+    cout << endl;
+	system("pause");
+	return 0;
+}

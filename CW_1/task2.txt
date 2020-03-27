@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int n;
+        cout<<"Input n:";
+	cin >> n;
+        long int sum = 0;
+	for (int i = 2; i <= n; i++) {
+		sum += powl(i, (i+1));
+		//cout << sum << endl;
+	}
+	cout << "Our result:" << sum << endl; 
+	system("pause");
+	return 0;
+}
