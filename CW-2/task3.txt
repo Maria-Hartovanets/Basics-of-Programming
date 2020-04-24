@@ -1,0 +1,21 @@
+#include <iostream>                 // варіант 5
+#include<cstring>
+using namespace std;
+
+int main()
+{
+      const int MAX_N = 100; 
+    char str[MAX_N]; 
+    cin.get(str, 100, '.'); 
+    unsigned int lenght = strlen(str);
+    unsigned int i;
+    for (i = 0; i < lenght; i++) {
+        if (isdigit(str[i])) // check if the item is a number
+        { 
+            str[i] = ' '; // change
+        } 
+    }
+        printf("%s", str);  // print string
+
+    return 0;
+}
